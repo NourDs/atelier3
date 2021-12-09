@@ -1,0 +1,41 @@
+#include <iostream>
+
+using namespace std;
+class matrice {
+    public :
+     int l, col;
+     public:
+     void set_dat(){
+         l=3;
+         col=3;
+
+     }
+     virtual void display(){
+         cout<<"Mere ";
+     }  
+
+};
+
+class vecteur : 
+public matrice{
+    public :
+    double coord1, coord2;
+    void set_dat(){
+       coord1=0;
+       coord2=0;
+    }
+
+    void display(){
+        cout<<"fille";
+    }   
+};
+int main(int argc, char const *argv[])
+{
+     vecteur vect1;
+     matrice  matrice1;
+     vect1.display();
+     cout<<"\n \n";
+     matrice1.display();
+     cout<<"\n \n";
+    return 0;
+}
