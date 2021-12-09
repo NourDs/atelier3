@@ -1,0 +1,41 @@
+#include <iostream>
+using namespace std;
+class shape{
+    public:
+    double largeur,hauteur;
+    public:
+    shape(double x,double y){
+          largeur=l; 
+          hauteur=h;
+    }
+    double area(){
+        return largeur * hauteur;
+    }
+    
+};
+class triangle :
+     public 
+     shape{
+    public :
+    double base ;
+    double largeur,hauteur;
+    public :
+        triangle (double x, double y ,double z){
+        largeur =x;
+        hauteur=y;
+        base=z;
+       }
+    double area(){
+        return (base*hauteur)/2;
+    }
+};
+class rectangle :
+public 
+shape{
+    public :
+     double largeur,hauteur;
+    public:
+     rectangle(double l,double h){
+        largeur=l;hauteur=h;
+     }
+};
