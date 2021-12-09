@@ -1,0 +1,21 @@
+#include <iostream> 
+class MyClass 
+{ 
+public: 
+    MyClass(); 
+    ~MyClass(); 
+}; 
+MyClass:: MyClass() 
+{ 
+    std::cout << "Constructeur" << '\n'; 
+} 
+
+MyClass::~MyClass() 
+{ 
+    std::cout << "Destructeur" << '\n'; 
+} 
+     //on Crée un objet du classe dans la fonction main
+int main() 
+{ 
+    MyClass objet; 
+}
