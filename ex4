@@ -1,41 +1,24 @@
 #include <iostream>
-
 using namespace std;
-class matrice {
-    public :
-     int l, col;
-     public:
-     void set_dat(){
-         l=3;
-         col=3;
+    class mere{
+        public:
 
-     }
-     virtual void display(){
-         cout<<"Mere ";
-     }  
+        void display();
 
-};
-
-class vecteur : 
-public matrice{
-    public :
-    double coord1, coord2;
-    void set_dat(){
-       coord1=0;
-       coord2=0;
+    };
+    void mere::display(){
+        cout<<"Mere ";
     }
-
-    void display(){
-        cout<<"fille";
-    }   
-};
-int main(int argc, char const *argv[])
+    class fille : public mere{
+        public:
+        void display();
+    };
+    void fille::display(){
+        cout<<"Fille ";
+    }
+int main()
 {
-     vecteur vect1;
-     matrice  matrice1;
-     vect1.display();
-     cout<<"\n \n";
-     matrice1.display();
-     cout<<"\n \n";
+    fille f1;
+    f1.display();
     return 0;
 }
