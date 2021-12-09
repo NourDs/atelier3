@@ -1,1 +1,20 @@
-#include
+#include <iostream>
+using namespace std;
+class MyClass{
+    public:
+    string D ;
+    public:
+    MyClass(){
+         cout<<"Constructor "<<endl;
+    }
+    ~MyClass(){
+         cout<<"Destructor "<<D<<endl;
+    }
+};
+int main(int argc, char const *argv[])
+{
+    MyClass obj1 ;
+     cout<<"Give a destructor :";
+     cin>>obj1.D;
+    return 0;
+}
